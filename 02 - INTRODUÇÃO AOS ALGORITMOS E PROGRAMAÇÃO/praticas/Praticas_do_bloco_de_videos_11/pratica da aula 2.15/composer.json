@@ -1,0 +1,24 @@
+{
+    "name": "raphael/lenovo",
+    "description": "Curso de Programador WEB",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Raphael da Silva Araújo",
+            "email": "raphaelaraujotoc@outlook.com",
+            "homepage": "https://github.com/Raphael120",
+            "role": "Estudante"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "source\\": "source/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "v6.1.7"
+    }
+}
