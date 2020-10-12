@@ -1,103 +1,105 @@
-<!DOCTYPE html> <!-- DOCUMENTO HTML 5 -->
+<!DOCTYPE html>
 <html lang='pt-br'>
-<!-- INFORMAR A LÍNGUA QUE SERÁ UTILIZADA NO SITE -->
 
 <head>
-    <!-- CONJUNTO DE CARACTERES -->
     <meta charset='UTF-8'>
-
-    <!-- VIEWPORT -->
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-
-    <!-- ROBOTS -->
     <meta name='robots' content='index, follow'>
-
-    <!-- SHORTCUT -->
-    <link rel='shortcut icon' href='http://www.ifto.edu.br/++theme++portal-do-ifto/img/favicon.ico'>
-
-    <!-- CSS -->
+    <link rel='shortcut icon' href=''>
     <link rel='stylesheet' href=''>
-
-    <!-- TÍTULO DA PÁGINA -->
-    <title>APRENDENDO HTML</title>
+    <title>Document</title>
 </head>
 
-<!-- CONTEÚDO EXIBIDO PARA O USUÁRIO  -->
-
 <body>
-    <h1> Em relação aos jogos da atual geração, a Sony afirma que apenas dez títulos ficam confinados ao PS4. Eles serão
-        designados como “jogáveis apenas no PS4” na PlayStation Store e não poderão ser instalados e executados no PS5
-    </h1>
-    <!-- <h2> h2 </h2>
-    <h3> h3 </h3>
-    <h4> h4 </h4>
-    <h5> h5 </h5> -->
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <legend>
+                    Meu formulário
+                </legend>
+                <!-- readonly: input apenas para leitura -->
+                <p>
+                    Insira seu nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </p>
 
-    <p>
-        <!-- MARCAÇÃO DE PARÁGRAFOS  -->
-        A respeito dos demais, a Sony observa que os jogos podem oferecer o modo Game Boost. O recurso faz com que o
-        game
-        reconheça o hardware mais poderoso do PS5 para rodar melhor do que no PS4, com gráficos superiores e performance
-        mais estável, por exemplo. Para tirar proveito dessas vantagens, a recomendação é de manter sempre o PS5 e os
-        títulos atualizados nas últimas versões.
-    </p>
+                <p>
+                    Insira seu email: <input type="email" name="email" id="email" placeholder="Digite seu email"
+                        required>
+                </p>
 
-    <P>
-        Também há ressalvas de que mesmo jogos compatíveis com o PS5 podem apresentar algum tipo de limitação em termos
-        de
-        recursos originalmente suportados no PS4, além de erros e eventuais problemas de performance. Porém, a Sony não
-        dá
-        nenhum exemplo do que seriam esses recursos e recomenda que o usuário teste cada game, antes de comprar DLCs e
-        conteúdo adicional para títulos de PS4.
-    </P>
+                <p>
+                    Insira sua senha: <input type="password" name="senha" id="senha" placeholder="Digite sua senha"
+                        required>
+                </p>
 
-    <P>
-        Em relação aos jogos da atual geração, a Sony afirma que apenas dez títulos ficam confinados ao PS4. Eles serão
-        designados como “jogáveis apenas no PS4” na PlayStation Store e não poderão ser instalados e executados no PS5
-    </P>
+                <p>
+                    Insira seu sexo: <br>
+                    <input type="radio" name="sexo" required> Masculino
+                    <input type="radio" name="sexo" required> Feminino
+                </p>
 
-    <a href="http://www.ifto.edu.br/araguaina" target="blank" title="Campus Araguaina" alt="Campus Araguaina">
-        Campus Araguaína
-    </a>
+                <p>
+                    Insira sua tecnologia preferida: <br>
+                    <input type="checkbox" name="HTML" id="HTML"> HTML 5
+                    <input type="checkbox" name="CSS" id="CSS"> CSS 3
+                    <input type="checkbox" name="JAVASCRIPT" id="JAVASCRIPT"> JAVASCRIPT
+                    <input type="checkbox" name="PHP" id="PHP"> PHP 8
+                    <input type="checkbox" name="PYTHON" id="PYTHON"> PYTHON 3
+                </p>
 
-    <h2> Lista de jogos incompatíveis com o PlayStation 5 </h2>
+                <p>
+                    Insira o arquivo: <input type="file" name="file" id="file" required>
+                </p>
 
-    <ul>
-        <li>DWVR</li>
-        <li>Afro Samurai 2 Revenge of Kuma Volume One</li>
-        <li>TT Isle of Man - Ride on the Edge 2</li>
-        <li>Just Deal With It!</li>
-        <li>Shadow Complex Remastered</li>
-        <li>Robinson: The Journey</li>
-        <li>We Sing</li>
-        <li>Hitman Go: Definitive Edition</li>
-        <li>Shadwen</li>
-        <li>Joe's Diner</li>
-    </ul>
+                <p>
+                    Informe uma url: <input type="url" name="url" id="url" required>
+                </p>
 
-    <!-- <ol reversed> -->
-    <!-- <ol start=3> -->
-    <!-- <ol type='I'> -->
-    <!-- <ol type='A'> -->
-    <ol type='a'>
-        <li>DWVR</li>
-        <li>Afro Samurai 2 Revenge of Kuma Volume One</li>
+                <p>
+                    Range: <input type="range" name="range" id="range" max="10" min="1" step="1" required>
+                </p>
 
-        <ul>
-            <li>Programador WEB</li>
-        </ul>
+                <p>
+                    Selecione um curso <br>
+                    <select name="curso" id="curso">
+                        <optgroup label="Grupo1">
+                            <option value=""> Grupo 1.1</option>
+                            <option value=""> Grupo 1.2</option>
+                            <option value=""> Grupo 1.3</option>
+                        </optgroup>
 
-        <li>TT Isle of Man - Ride on the Edge 2</li>
-        <li>Just Deal With It!</li>
-        <li>Shadow Complex Remastered</li>
-        <li>Robinson: The Journey</li>
-        <li>We Sing</li>
-        <li>Hitman Go: Definitive Edition</li>
-        <li>Shadwen</li>
-        <li>Joe's Diner</li>
-    </ol>
+                        <optgroup label="Grupo2">
+                            <option value=""> Grupo 2.1</option>
+                            <option value=""> Grupo 2.2</option>
+                            <option value=""> Grupo 2.3</option>
+                        </optgroup>
 
-    <!-- SCRIPT (É RECOMENDADO COLOCAR NO FINAL DO BODY)  -->
+                        <option value=""> Opção 1 </option>
+                        <option value=""> Opção 2 </option>
+                        <option value=""> Opção 3 </option>
+                    </select>
+                </p>
+
+                <p>
+                    Data: <input type="date" name="date" id="date" required>
+                </p>
+
+                <p>
+                    Time: <input type="time" name="time" id="time" required>
+                </p>
+
+                <p>
+                    Date Time: <input type="datetime" name="datetime" id="datetime" required>
+                </p>
+
+                <p>
+                    <button type="submit">
+                        Validar!
+                    </button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
     <script> </script>
 </body>
 
