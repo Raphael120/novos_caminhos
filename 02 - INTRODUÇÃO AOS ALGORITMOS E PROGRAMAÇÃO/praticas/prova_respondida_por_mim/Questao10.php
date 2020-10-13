@@ -17,15 +17,16 @@
 // Para inputString = "foo(bar)baz(blim)",
 // a saída deve ser "foorabbazmilb"
 
+
+$inputString = "foo(bar(baz))blim";
+
 function reverseInParentheses($inputString)
 {
-    $inversions = substr_count($inputString, '(') + 1;
-    while ($inversions) {
-        $inversions--;
-        $open = strrpos($inputString, '(');
-        $close = (strpos($inputString, ')', $open)) - $open + 1;
-        $invert = str_replace(['(', ')'], '', strrev(substr($inputString, $open, $close)));
-        $inputString = substr_replace($inputString, $invert, $open, $close);
-    }
+     while (preg_match('/\(([^()]*)\)/', $inputString, $m))
+        $inputString = str_replace($m[0], strrev($m[1]), $inputString);
     return $inputString;
 }
+
+echo reverseInParentheses($inputString);
+
+// RESPOSTA = foobazrabblim

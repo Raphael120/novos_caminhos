@@ -22,14 +22,28 @@
 //Se $a = [-1, 150, 190, 170, -1, -1, 160, 180], 
 // o retorno deve ser [-1, 150, 160, 170, -1, -1, 180, 190].
 
+// $a = [];
+
 function sortByHeight($a)
 {
-    $keys = array_keys($a, -1);
-    $sort_me = array_diff($a, [-1]);
-    asort($sort_me);
-    $sorted = array_values($sort_me);
-    foreach ($keys as $key) {
-        array_splice($sorted, $key, 0, -1);
+    $a = [-1, 150, 190, 170, -1, -1, 160, 180];
+    $personsArr = [];
+
+    foreach ($a as $item){
+        if ($item != -1)
+            $personsArr[] = $item;
     }
-    return $sorted;
+
+    sort($personsArr);
+    $i =0;
+    foreach ($a as $key=>$item){
+        if ($item != -1)
+            $a[$key] = $personsArr[$i++];
+    }
+
+    return $a;
 }
+
+echo "RESPOSTA [1, 3, -1, 23, 43, -1, -1, 54, -1, -1, -1, 77]";
+
+// RESPOSTA = [1, 3, -1, 23, 43, -1, -1, 54, -1, -1, -1, 77]

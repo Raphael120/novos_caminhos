@@ -19,13 +19,29 @@
 //Retorno inteiro
 //O número do século em que se encontra o ano.
 
-
-function centuryFromYear($year)
+function centuryFromYear( $year)
 {
+	
+	// No negative value is
+	// allow for year
+	if ($year <= 0)
+		echo "0 and negative is not allow"
+			, "for a year";
 
-    if ($year % 100 === 0) {
-        return intval($year / 100);
-    } else {
-        return intval($year / 100) + 1;
-    }
+	// If year is between 1 to 100 it
+	// will come in 1st century
+	else if($year <= 100)
+		echo "1st century\n";
+
+	else if ($year % 100 == 0)
+		echo $year / 100 ," century";
+	else
+		echo floor($year / 100) + 1 
+					, " century";	 
 }
+
+	// Driver Code
+	$year = 374;
+	centuryFromYear($year);
+
+	// RESPOSTA: SÉCULO 4
