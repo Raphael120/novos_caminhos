@@ -21,4 +21,4 @@ if __name__ == '__main__':
 
     print (isLucky(n))
 
-    # RESPOSTA = FALSE
+    # RESPOSTA = FALSE ✅

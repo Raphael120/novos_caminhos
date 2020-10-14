@@ -41,6 +41,6 @@ foreach ($inputArray as $value) {
 var_export($longest);
 }
 
-// RESPOSTA = array ('zzzzzz', 'abcdef', 'aaaaaa') LETRA "C"
+// RESPOSTA = array ('zzzzzz', 'abcdef', 'aaaaaa') LETRA "C" ✅
 
 echo allLongestStrings($inputArray);

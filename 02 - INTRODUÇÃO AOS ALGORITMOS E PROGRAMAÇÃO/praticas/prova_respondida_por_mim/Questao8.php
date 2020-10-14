@@ -43,4 +43,4 @@ function isLucky($n)
 
 echo isLucky($n);
 
-// RESPOSTA = FALSE
+// RESPOSTA = FALSE ✅

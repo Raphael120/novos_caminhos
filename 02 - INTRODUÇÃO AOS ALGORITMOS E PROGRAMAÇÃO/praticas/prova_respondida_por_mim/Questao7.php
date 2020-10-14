@@ -20,4 +20,4 @@ function commonCharacterCount($s1, $s2)
 
 echo "RESPOSTA = 4";
 
-// RESPOSTA = 4
+// RESPOSTA = 4 ✅

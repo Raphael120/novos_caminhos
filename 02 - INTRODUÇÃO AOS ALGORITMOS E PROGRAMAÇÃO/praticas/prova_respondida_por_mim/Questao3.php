@@ -33,4 +33,4 @@ function adjacentElementsProduct($inputArray) {
 echo adjacentElementsProduct($inputArray);
 
 
-// RESPOSTA = 30
+// RESPOSTA = 30 ✅

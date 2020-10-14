@@ -49,4 +49,4 @@ function almostIncreasingSequence($sequence)
 
 echo almostIncreasingSequence($sequence);
 
-// RESPOSTA = TRUE
+// RESPOSTA = TRUE ✅

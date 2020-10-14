@@ -16,26 +16,17 @@
 // true se inputString é um palíndromo,
 // false se caso contrário.
 
+$inputString = "zzzazzazz";
+
+function checkPalindrome($inputString)
+{
+
+    if ($inputString === strrev($inputString)) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
-// PHP code to check for Palindrome string in PHP 
-// Using strrev() 
-function Palindrome($inputString){ 
-	if (strrev($inputString) == $inputString){ 
-		return 1; 
-	} 
-	else{ 
-		return 0; 
-	} 
-} 
-
-// Driver Code 
-$original = "zzzazzazz"; 
-if(Palindrome($original)){ 
-	echo "Palindromo (true)"; 
-} 
-else { 
-echo "Não é um Palindromo (false)"; 
-} 
-
-// RESPOSTA: FALSE ✅
+var_dump (checkPalindrome($inputString));
