@@ -7,100 +7,51 @@
     <meta name='robots' content='index, follow'>
     <link rel='shortcut icon' href=''>
     <link rel='stylesheet' href=''>
-    <title>Document</title>
+    <title>Site do Curso</title>
 </head>
 
 <body>
+    <header>
+        <a href="#">
+            <img src="assets/img/logo.png" alt="logotipo do curso" title="logotipo do curso">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#escola">Escola</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <form action="" method="post">
-            <fieldset>
-                <legend>
-                    Meu formulário
-                </legend>
-                <!-- readonly: input apenas para leitura -->
-                <p>
-                    Insira seu nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
-                </p>
+        <article>
+            <header>
+                <h1>Aque você aprende o essencial para trabalhar como webmaster fullstack</h1>
+            </header>
+        </article>
 
-                <p>
-                    Insira seu email: <input type="email" name="email" id="email" placeholder="Digite seu email"
-                        required>
-                </p>
+        <section>
+            <header>
+                <h1>
+                    Nossos ultimos artigos
+                </h1>
+            </header>
+            <p>
+                Aqui você encontra os artigos necessários para auxiliar na sua caminhada na WEB
+            </p>
+        </section>
 
-                <p>
-                    Insira sua senha: <input type="password" name="senha" id="senha" placeholder="Digite sua senha"
-                        required>
-                </p>
 
-                <p>
-                    Insira seu sexo: <br>
-                    <input type="radio" name="sexo" required> Masculino
-                    <input type="radio" name="sexo" required> Feminino
-                </p>
-
-                <p>
-                    Insira sua tecnologia preferida: <br>
-                    <input type="checkbox" name="HTML" id="HTML"> HTML 5
-                    <input type="checkbox" name="CSS" id="CSS"> CSS 3
-                    <input type="checkbox" name="JAVASCRIPT" id="JAVASCRIPT"> JAVASCRIPT
-                    <input type="checkbox" name="PHP" id="PHP"> PHP 8
-                    <input type="checkbox" name="PYTHON" id="PYTHON"> PYTHON 3
-                </p>
-
-                <p>
-                    Insira o arquivo: <input type="file" name="file" id="file" required>
-                </p>
-
-                <p>
-                    Informe uma url: <input type="url" name="url" id="url" required>
-                </p>
-
-                <p>
-                    Range: <input type="range" name="range" id="range" max="10" min="1" step="1" required>
-                </p>
-
-                <p>
-                    Selecione um curso <br>
-                    <select name="curso" id="curso">
-                        <optgroup label="Grupo1">
-                            <option value=""> Grupo 1.1</option>
-                            <option value=""> Grupo 1.2</option>
-                            <option value=""> Grupo 1.3</option>
-                        </optgroup>
-
-                        <optgroup label="Grupo2">
-                            <option value=""> Grupo 2.1</option>
-                            <option value=""> Grupo 2.2</option>
-                            <option value=""> Grupo 2.3</option>
-                        </optgroup>
-
-                        <option value=""> Opção 1 </option>
-                        <option value=""> Opção 2 </option>
-                        <option value=""> Opção 3 </option>
-                    </select>
-                </p>
-
-                <p>
-                    Data: <input type="date" name="date" id="date" required>
-                </p>
-
-                <p>
-                    Time: <input type="time" name="time" id="time" required>
-                </p>
-
-                <p>
-                    Date Time: <input type="datetime" name="datetime" id="datetime" required>
-                </p>
-
-                <p>
-                    <button type="submit">
-                        Validar!
-                    </button>
-                </p>
-            </fieldset>
-        </form>
     </main>
-    <script> </script>
+
+    <footer>
+
+    </footer>
+
+    <script></script>
 </body>
 
 </html>
