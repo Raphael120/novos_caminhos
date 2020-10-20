@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
     <link rel="shortcut icon" href="assets/img/ifto.svg" />
-    <link rel="stylesheet" href="assets/css/icon/fonticon.css" />
+    <link rel="stylesheet" href="assets/css/icons/fonticon.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/boot.css" />
@@ -38,42 +38,50 @@
         <!-- CHAMADA PRINCIPAL -->
         <div class="main_cta">
             <article class="main_cta_content">
-                <header>
-                    <h1>
-                        Aqui você aprende o essencial para trabalhar como
-                        webmaster fullstack
-                    </h1>
-                    <p>Estude o HTML 5 e o CSS 3 na disciplina de webdesign</p>
+                <div class="main_cta_content_spacer">
+                    <header>
+                        <h1>
+                            Aqui você aprende o essencial para trabalhar como
+                            webmaster fullstack
+                        </h1>
+                        <p>Estude o HTML 5 e o CSS 3 na disciplina de webdesign</p>
 
-                    <p>
-                        <a href="#" class="btn"> Saiba mais</a>
-                    </p>
-                </header>
+                        <p>
+                            <a href="#" class="btn"> Saiba mais</a>
+                        </p>
+                    </header>
+                </div>
             </article>
         </div>
         <!-- FIM CHAMADA PRINCIPAL -->
 
         <!-- ARTIGOS -->
-        <section>
-            <header>
-                <h1>Nossos ultimos artigos</h1>
+        <section class="main_blog">
+            <header class="main_blog_header">
+                <h1 class="icon-blog">
+                    Nossos ultimos artigos
+                </h1>
+                <p>
+                    Aqui você encontra os artigos necessários para auxiliar na
+                    sua caminhada na WEB
+                </p>
             </header>
-            <p>
-                Aqui você encontra os artigos necessários para auxiliar na
-                sua caminhada na WEB
-            </p>
 
             <?php for ($i=0; $i < 12; $i++) : ?>
             <article>
                 <a href="#"></a>
-                <img src="assets/img/rede_federal.png" alt="Rede Federal" title="Rede Federal" />
-                <p>Categoria</p>
+                <img src="assets/img/rede_federal2.jpg" alt="Rede Federal" title="Rede Federal" />
+                <p>
+                    <a href="" class="category">
+                        Categoria
+                    </a>
+                </p>
                 <h2>
-                    Iste et vero alias quaerat error iste cum deleniti. Vel
-                    asperiores omnis ratione cum odit magnam aut. Sed ea
-                    quisquam. Enim quibusdam aliquam optio rerum fugiat
-                    accusantium enim pariatur illo. Sequi consectetur nihil
-                    recusandae laboriosam.
+                    <a href="" class="title">
+                        Iste et vero alias quaerat error iste cum deleniti. Vel
+                        asperiores omnis ratione cum odit magnam aut. Sed ea
+                        quisquam.
+                    </a>
                 </h2>
             </article>
             <?php endfor; ?>
@@ -81,21 +89,23 @@
         <!-- FIM ARTIGOS -->
 
         <!-- NEWS -->
-        <article>
-            <header>
-                <h1>Quer receber todas as novidades em seu e-mail?</h1>
-                <p>
-                    Informe seu nome e e-mail no campo ao lado e clique em
-                    OK!
-                </p>
-            </header>
+        <div class="email_space">
+            <article>
+                <header class="email_space_header">
+                    <h1>Quer receber todas as novidades em seu e-mail?</h1>
+                    <p>
+                        Informe seu nome e e-mail no campo ao lado e clique em
+                        OK!
+                    </p>
+                </header>
 
-            <form action="news.php" method="post">
-                <input type="text" name="nome" placeholder="Seu nome" required />
-                <input type="email" name="email" placeholder="Seu e-mail" required />
-                <button type="submit">OK!</button>
-            </form>
-        </article>
+                <form action="news.php" method="post">
+                    <input type="text" name="nome" placeholder="Seu nome" required />
+                    <input type="email" name="email" placeholder="Seu e-mail" required />
+                    <button type="submit">OK!</button>
+                </form>
+            </article>
+        </div>
         <!-- FIM NEWS -->
 
         <!-- SOBRE O CURSO -->
